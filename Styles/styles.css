@@ -1,0 +1,135 @@
+:root {
+  --green: #10cab7;
+  --textColor: #2c4755;
+}
+
+* {
+  overflow-x: hidden;
+  font-family: "Work Sans", sans-serif;
+  scroll-behavior: smooth;
+  color: var(--textColor);
+}
+section {
+  max-height: fit-content;
+}
+a {
+  text-decoration: none;
+}
+/* Start Header */
+
+.nav-link {
+  color: var(--textColor);
+}
+.active,
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--green);
+}
+.navbar-toggler {
+  border-color: var(--textColor);
+}
+.fa-bars {
+  color: var(--textColor);
+}
+.navbar-toggler[aria-expanded="true"] {
+  border-color: var(--green);
+}
+/* End Header */
+
+/* Start home section */
+
+.home-img {
+  margin-top: 70px;
+  min-height: 50vh;
+  background-image: url(https://images.unsplash.com/photo-1644916081706-e98b1fadc319?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-size: cover;
+}
+.home h1 {
+  color: var(--green);
+}
+
+/* End home section */
+
+/* Start Services Section */
+.section-name-back {
+  z-index: -1;
+  font-size: 5em;
+  opacity: 0.09;
+}
+.section-name-desc {
+  z-index: 1;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.icon {
+  color: var(--green);
+  margin-right: 10px;
+}
+.Services-items::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -25px;
+  height: 100%;
+  border-right: 200px solid var(--textColor);
+}
+/* End Services Section */
+
+/* Start About */
+.about-img::after {
+  z-index: -1;
+  content: "";
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-left: 50px solid var(--green);
+  border-bottom: 50px solid var(--green);
+  top: 50%;
+  right: 50%;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(30%, -70%);
+}
+.about-desc > p:first-child:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  border-bottom: 1px solid var(--green);
+  bottom: 0;
+  left: 0;
+}
+/* End About */
+
+/* Start Contact */
+.email-text {
+  color: var(--green);
+}
+.social-icon {
+  margin: 0 5px;
+  cursor: pointer;
+}
+/* End Contact */
+
+/* Start Footer */
+.footer {
+  background-color: var(--textColor);
+}
+.footer span {
+  color: var(--green);
+}
+/* End Footer */
+@media all and (max-width: 992px) {
+  .Services-items::after {
+    display: none;
+  }
+  .about-img::after {
+    width: 100px;
+    height: 100px;
+    border-left: 20px solid var(--green);
+    border-bottom: 20px solid var(--green);
+    transform: translate(20%, -90%);
+  }
+}
