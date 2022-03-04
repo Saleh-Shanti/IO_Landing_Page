@@ -2,7 +2,7 @@
 
 Simple Landing Page , I've Downloaded the Design From Graphberry (https://www.graphberry.com/)
 
-- Live Site URL: (https://saleh-shanti.github.io/)
+- Live Site URL: (https://saleh-shanti.github.io/IO_Landing_Page/)
 
 ### Screenshot
 
